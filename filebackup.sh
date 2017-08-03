@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
 TIMESTR=`date +"%y%m%d"`
 NAME=`hostname`
 BACKUPFILE="/tmp/${NAME}_files_$TIMESTR.tar.gz"
