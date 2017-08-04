@@ -33,10 +33,17 @@ wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /
 sudo apt install -y mydumper awscli pigz
 ```
 
-### 2. configure aws
+### 2. configure aws & mysql client
 
 ```
 aws configure
+```
+
+open my.cnf (e.g., `sudo vim /etc/mysql/my.cnf` and add following lines:
+```
+[client]
+user = forge
+password = <yourforgepassword>
 ```
 
 ### 3. install crontabs
