@@ -1,17 +1,46 @@
-# serverpilot_backup
+# Server Backups
 
-## 1. install dependencies
+## Serverpilot Backup
 
-> apt install -y mydumper awscli pigz
+### 1. install dependencies
 
-## 2. configure aws
+```sh
+apt install -y mydumper awscli pigz
+```
 
-> aws configure
+### 2. configure aws
 
-## 3. install crontabs
+```
+aws configure
+```
+
+### 3. install crontabs
 
 weekly filebackups ...
-> wget https://github.com/inkrement/serverpilot_backup/raw/master/filebackup -P /etc/cron.weekly/ && chmod a+x /etc/cron.weekly/filebackup
+> wget https://github.com/inkrement/serverpilot_backup/raw/master/serverpilot_filebackup -P /etc/cron.weekly/ && chmod a+x /etc/cron.weekly/serverpilot_filebackup
 
 ... and daily mysqlbackups
 > wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && chmod a+x /etc/cron.daily/mysqlbackup
+
+
+## Forge Backup
+
+### 1. install dependencies
+
+```sh
+sudo apt install -y mydumper awscli pigz
+```
+
+### 2. configure aws
+
+```
+aws configure
+```
+
+### 3. install crontabs
+
+weekly filebackups ...
+> sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/forge_filebackup -P /etc/cron.weekly/ && sudo chmod a+x /etc/cron.weekly/forge_filebackup
+
+... and daily mysqlbackups
+> sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && sudo chmod a+x /etc/cron.daily/mysqlbackup
