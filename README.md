@@ -2,7 +2,7 @@
 
 ## 1. install dependencies
 
-> apt install mydumper awscli pigz
+> apt install -y mydumper awscli pigz
 
 ## 2. configure aws
 
