@@ -17,11 +17,13 @@ aws configure
 ### 3. install crontabs
 
 weekly filebackups ...
-> wget https://github.com/inkrement/serverpilot_backup/raw/master/serverpilot_filebackup -P /etc/cron.weekly/ && chmod a+x /etc/cron.weekly/serverpilot_filebackup
-
+```sh
+wget https://github.com/inkrement/serverpilot_backup/raw/master/serverpilot_filebackup -P /etc/cron.weekly/ && chmod a+x /etc/cron.weekly/serverpilot_filebackup
+```
 ... and daily mysqlbackups
-> wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && chmod a+x /etc/cron.daily/mysqlbackup
-
+```
+wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && chmod a+x /etc/cron.daily/mysqlbackup
+```
 
 ## Forge Backup
 
@@ -40,7 +42,10 @@ aws configure
 ### 3. install crontabs
 
 weekly filebackups ...
-> sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/forge_filebackup -P /etc/cron.weekly/ && sudo chmod a+x /etc/cron.weekly/forge_filebackup
-
+```
+sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/forge_filebackup -P /etc/cron.weekly/ && sudo chmod a+x /etc/cron.weekly/forge_filebackup
+```
 ... and daily mysqlbackups
-> sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && sudo chmod a+x /etc/cron.daily/mysqlbackup
+```
+sudo wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /etc/cron.daily/ && sudo chmod a+x /etc/cron.daily/mysqlbackup
+```
