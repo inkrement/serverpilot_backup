@@ -5,7 +5,7 @@
 ### 1. install dependencies
 
 ```sh
-apt install -y mydumper pigz
+apt install -y mydumper pigz python-pip
 pip install awscli
 ```
 
