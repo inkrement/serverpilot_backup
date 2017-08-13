@@ -1,21 +1,20 @@
 # Server Backups
 
-## Serverpilot Backup
 
-### 1. install dependencies
+### Install & configure dependencies
 
 ```sh
 apt install -y mydumper pigz python-pip
 pip install awscli
 ```
 
-### 2. configure aws
+Now you have to configure the aws client:
 
 ```
 aws configure
 ```
 
-### 3. install crontabs
+## Serverpilot Backup
 
 weekly filebackups ...
 ```sh
@@ -28,26 +27,12 @@ wget https://github.com/inkrement/serverpilot_backup/raw/master/mysqlbackup -P /
 
 ## Forge Backup
 
-### 1. install dependencies
-
-```sh
-sudo apt install -y mydumper awscli pigz
-```
-
-### 2. configure aws & mysql client
-
-```
-aws configure
-```
-
 open my.cnf (e.g., `sudo vim /etc/mysql/my.cnf` and add following lines:
 ```
 [client]
 user = forge
 password = <yourforgepassword>
 ```
-
-### 3. install crontabs
 
 weekly filebackups ...
 ```
