@@ -5,7 +5,8 @@
 ### 1. install dependencies
 
 ```sh
-apt install -y mydumper awscli pigz
+apt install -y mydumper pigz
+pip install awscli
 ```
 
 ### 2. configure aws
